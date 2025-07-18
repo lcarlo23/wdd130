@@ -57,7 +57,7 @@ article {
     display: block;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
