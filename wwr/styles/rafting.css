@@ -33,19 +33,13 @@ header {
     grid-template-columns: 1fr 2fr;
     border-bottom: 1px solid black;
     margin-bottom: 25px;
-}
-
-header .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
 }
 
 header nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 25px;
 }
 
 header nav a {
@@ -53,6 +47,7 @@ header nav a {
     text-align: center;
     color: black;
     font-size: 1.1rem;
+    margin: 25px;
 }
 
 h1,
