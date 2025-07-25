@@ -28,23 +28,65 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1.1rem;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
     letter-spacing: 1px;
-    color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 nav,
 p,
 section,
 article {
-    margin: 16px;
+    margin: 0;
     padding: 8px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    flex: 1;
 }
 
 .socialmedia a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
@@ -70,7 +112,7 @@ article {
 .hero article {
     position: absolute;
     bottom: 100px;
-    left: 75px;
+    left: 84px;
     color: var(--primary-color);
     background-color: var(--secondary-color-transparent);
     width: 80%;
@@ -80,4 +122,56 @@ article {
     width: 200px;
     float: right;
     margin-left: 5px;
+}
+
+.box {
+    background-color: var(--secondary-color);
+    margin: 25px 0;
+    padding: 25px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    place-items: center;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    place-items: center;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+    text-align: center;
+}
+
+.adventure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.adventure figcaption {
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: var(--accent2-color);
+    margin: 0;
+    padding: 5px;
 }
