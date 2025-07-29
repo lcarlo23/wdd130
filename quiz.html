@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Basic HTML and CSS Quiz</h1>
+    <form>
+        <div class="form-input">
+            <label for="q1">What tag is used to create a hyperlink in HTML?</label>
+            <input type="text" name="q1" id="q1">
+        </div>
+        <div class="form-input">
+            <label for="q2">Describe the difference between classes and IDs in CSS</label>
+            <textarea name="q2" id="q2" rows="3"></textarea>
+        </div>
+        <div class="form-input">
+            <label for="q3">Which property is used in CSS to change the background color of an element?</label>
+            <select name="q3" id="q3">
+                <option value="" selected disabled>Choose One...</option>
+                <option value="color">color</option>
+                <option value="background-color">background-color</option>
+                <option value="font-color">font-color</option>
+                <option value="border-color">border-color</option>
+            </select>
+        </div>
+        <div class="form-input">
+            <label for="q4">How many heading levels are available in HTML?</label>
+            <input type="number" name="q4" id="q4">
+        </div>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+
+</html>
