@@ -68,6 +68,7 @@ article {
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .socialmedia {
@@ -75,7 +76,6 @@ footer {
     justify-content: flex-end;
     align-items: center;
     gap: 25px;
-    flex: 1;
 }
 
 .socialmedia a {
@@ -251,7 +251,8 @@ footer {
     margin: 10px auto;
 }
 
-.form-item label, .form-item legend {
+.form-item label,
+.form-item legend {
     text-align: right;
     font-weight: 600;
 }
@@ -313,4 +314,13 @@ fieldset .radio-item {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     font-weight: 500;
+}
+
+.contact-wireframe {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.contact-wireframe:hover {
+    text-decoration: underline;
 }
