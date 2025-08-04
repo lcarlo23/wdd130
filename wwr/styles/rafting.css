@@ -23,7 +23,8 @@ body {
 
 header,
 main,
-footer {
+footer,
+.home-content {
     width: 840px;
     margin: 0 auto;
 }
@@ -84,17 +85,20 @@ footer {
     align-items: center;
 }
 
-.hero {
+.hero,
+.home-hero {
     position: relative;
 }
 
-.hero img {
+.hero img,
+.home-hero img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.hero h1 {
+.hero h1,
+.hero-title {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -104,7 +108,20 @@ footer {
     background-color: var(--primary-color-transparent);
 }
 
-.hero article {
+.hero-title h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.hero-title p {
+    font-size: 2rem;
+    padding: 0 0 15px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.hero article,
+.home-hero article {
     position: absolute;
     bottom: 100px;
     left: 84px;
@@ -113,15 +130,49 @@ footer {
     width: 80%;
 }
 
-.hero article img {
+.hero article img,
+.home-hero article img {
     width: 200px;
     float: right;
     margin-left: 5px;
 }
 
+.main-home {
+    width: 100%;
+}
+
+.home-hero {
+    padding: 0;
+}
+
+.home-content.ctas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.trips-cta {
+    text-align: center;
+    padding: 0;
+}
+
+.trips-cta img {
+    width: 100%;
+    height: auto;
+}
+
+.trips-cta a {
+    text-decoration: none;
+}
+
+.trips-cta a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
 .box {
     background-color: var(--secondary-color);
-    margin: 25px 0;
+    margin: 25px auto;
     padding: 25px;
 }
 
@@ -242,6 +293,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .form-item {
@@ -323,4 +375,52 @@ fieldset .radio-item {
 
 .contact-wireframe:hover {
     text-decoration: underline;
+}
+
+.offerings {
+    display: grid;
+    grid-template: repeat(3, auto) / 1fr;
+    gap: 25px;
+    margin: 0;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(7, 1fr);
+    place-items: center;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.offerings-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.first-row img,
+.third-row img {
+    grid-area: 1/1/5/5;
+}
+
+.offerings-grid .description {
+    width: 100%;
+    place-content: center;
+    text-align: center;
+    background-color: var(--primary-color-transparent);
+    color: white;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.first-row .description,
+.third-row .description {
+    grid-area: 2/4/4/7;
+}
+
+.second-row img {
+    grid-area: 1/4/5/8;
+}
+
+.second-row .description {
+    grid-area: 2/2/4/5;
 }
