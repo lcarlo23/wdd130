@@ -556,3 +556,8 @@ td {
 .contact-cta a:hover {
     color: black;
 }
+
+.home-content .contact-form button,
+.home-content .contact-form h2 {
+    margin: 25px;
+}
