@@ -420,6 +420,7 @@ fieldset .radio-item {
     color: white;
     padding: 20px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 
 .first-row .description,
@@ -551,6 +552,7 @@ td {
 .contact-cta a {
     font-size: 1.5rem;
     color: var(--primary-color);
+    font-weight: 900;
 }
 
 .contact-cta a:hover {
