@@ -51,6 +51,10 @@ header nav a {
     margin: 25px;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -297,6 +301,10 @@ footer {
     text-align: center;
 }
 
+.contact-form h1 {
+    font-size: 2rem;
+}
+
 .form-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -500,6 +508,10 @@ table span {
 .table-cta {
     font-size: 0.85rem;
     margin-bottom: 25px;
+}
+
+.table-title {
+    font-size: 1.5rem;
 }
 
 .table-cta table {
